@@ -1,0 +1,21 @@
+{
+  "name": "imgconverter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-image": "^6.2.1",
+    "gulp-imgconv": "^0.9.2"
+  },
+  "dependencies": {
+    "gulp-if": "^3.0.0",
+    "gulp-rename": "^2.0.0",
+    "yargs": "^16.2.0"
+  }
+}
