@@ -3,7 +3,16 @@
 npm install
 ```
 
-# Execute
+# Using
+Just put all images to convert and compress in the folder <b>src</b>, run the command and have all the images in the folder images.
+
+Optional, can run just a process, this script have 2, convert and compress, if just need just one run it some like this: <em>gulp convert</em> or <em>gulp compress</em>
+
+<b>Important:</b> <em>gulp convert</em> get the images from folder <b>src</b> and <em>gulp compress</em> get the images from the folder <b>dest</b>
+
+The command <em>gulp images</em> is a serie for convert and compress tasks
+
+## Execute
 ```javascript
 gulp images
 ```
@@ -15,7 +24,7 @@ This execute the basic compress for imagen in folder <b>src</b>, send the images
 | resize  | false | <em>boolean</em> true \| false | If need apply a resize |
 | width   | 1000 | <em>Integer</em> | Apply this width to the output image |
 | height  | 1000 | <em>Integer</em> | Apply this height to the output image |
-| fit     | contain | cover, contain, fill, inside, outside | |
+| fit     | contain | cover, contain, fill, inside, outside | Indicate the resize method to apply in the image |
 | bg      | #ffffffff | <em>string</em> | Indicate the background for resizes using the format #rrbbggaa |
 | q       | 80 | <em>Integer</em> 0 to 100 | Indicate the quality where 100 is the best but files more bigs |
 
