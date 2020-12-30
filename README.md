@@ -1,6 +1,10 @@
-# Instalation
+# Requiered
+- npm ( <a href="https://www.npmjs.com" target="_blank">https://www.npmjs.com</a> )
+- Gulp ( <a href="https://gulpjs.com" target="_blank">https://gulpjs.com</a> )
+
+# Installation
 ```javascript
-npm install
+> npm install
 ```
 
 # Using
@@ -14,7 +18,7 @@ The command <em>gulp images</em> is a serie for convert and compress tasks
 
 ## Execute
 ```javascript
-gulp images
+> gulp images
 ```
 This execute the basic compress for imagen in folder <b>src</b>, send the images converters to folder <b>dest</b> and the final images with compress to the folder <b>images</b>.
 
@@ -33,36 +37,46 @@ This execute the basic compress for imagen in folder <b>src</b>, send the images
 Original images
 <img src="src/image-example-01.jpg">
 <small>Size: 932kb</small>
+
 <img src="src/image-example-02.jpg">
 <small>Size: 3.2mb</small>
 
+---
 ```javascript
-gulp images
+> gulp images
 ```
 <img src="images/image-example-01.jpg">
 <small>Size: 495kb</small>
+
 <img src="images/image-example-02.jpg">
 <small>Size: 1.1mb</small>
 
+---
 ```javascript
-gulp images --resize --width 500 --height 400 --output png --fit cover
+> gulp images --resize --width 500 --height 400 --output png --fit cover
 ```
 <img src="images/image-example-01.png">
 <small>Size: 98kb 500x400px</small>
+
 <img src="images/image-example-02.png">
 <small>Size: 111kb 500x400px</small>
 
+---
 ```javascript
-gulp images --output webp
+> gulp images --output webp
 ```
 <img src="images/image-example-01.webp">
 <small>Size: 518kb</small>
+
 <img src="images/image-example-02.webp">
 <small>Size: 711kb</small>
+
 
 ### Using for a ecommerce like Shopify
 Some ecommerce need images for a specific size (or optimized images), if need use this script for this can use this 
 ```javascript
-gulp images --resize --width 1000 --height 1000 --output jpg
+> gulp images --resize --width 1000 --height 1000 --output jpg
 ```
 This have a exit for all images to jpg, in a size 1000x1000px, and can put in the folder <b>src</b> subfolders and all images can be converter and compress
+
+<small>All images are from Pixabay.com</small>
