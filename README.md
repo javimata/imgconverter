@@ -7,12 +7,6 @@
 > npm install
 ```
 
-In some new versions of node the dependency Sharp can do a error, if this happend use this to install:
-```javascript
-> npm install --unsafe-perm
-```
-
-
 # Using
 Just put all images to convert and compress in the folder <b>src</b>, run the command and have all the images in the folder images.
 
