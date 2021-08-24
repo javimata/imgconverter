@@ -7,6 +7,13 @@
 > npm install
 ```
 
+*Note* The latest Node version tested is 12.22.5, if use a most recent version can receive a error, if need install a old version of node can use this:
+```javascript
+> nvm install 12.22.5
+> nvm use 12.22.5
+```
+
+
 # Using
 Just put all images to convert and compress in the folder <b>src</b>, run the command and have all the images in the folder images.
 
