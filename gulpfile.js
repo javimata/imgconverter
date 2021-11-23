@@ -3,21 +3,22 @@ const gulp   = require('gulp'),
       image  = require('gulp-image'),
       gulpif = require('gulp-if'),
       rename = require("gulp-rename"),
-      argv   = require('yargs').argv;
+      argv   = require('yargs').argv,
+      del    = require('del');
 
 var output = argv.output,
     resize = (argv.resize === undefined) ? false : true,
-    width  = (argv.width) ? argv.width : 1000,
+    width = (argv.width) ? argv.width : 1000,
     height = (argv.height) ? argv.height : 1000,
-    fit    = (argv.fit) ? argv.fit : "contain",
-    bg     = (argv.bg) ? argv.bg : "#ffffffff",
-    q      = (argv.q) ? argv.q : 80;
+    fit = (argv.fit) ? argv.fit : "contain",
+    bg = (argv.bg) ? argv.bg : "#ffffffff",
+    q = (argv.q) ? argv.q : 80;
 
-if ( output == "jpg" ) { output = "jpeg" }
+if (output == "jpg") { output = "jpeg" }
 
 gulp.task('convert', function () {
     var stream = gulp.src('src/**/*')
-        .pipe(gulpif(resize ,gic(gic
+        .pipe(gulpif(resize, gic(gic
             .begin()
             .resize({
                 width: width,
@@ -54,6 +55,10 @@ gulp.task('compress', function () {
         }))
         .pipe(gulp.dest('./images'));
     return stream;
+});
+
+gulp.task('clean', function () {
+    return del(['dest/**', 'images/**', 'src/**'], { force: true });
 });
 
 gulp.task('images', gulp.series('convert', 'compress'));
