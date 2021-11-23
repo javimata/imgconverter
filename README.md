@@ -18,7 +18,8 @@ brew install libjpeg libpng on macOS
 apt-get install -y libjpeg libpng on Ubuntu  
 npm install -g windows-build-tools on Windows  
   
-<br><br>  
+<br>
+
 # Using
 Just put all images to convert and compress in the folder <b>src</b>, run the command and have all the images in the folder images.
 
